@@ -156,4 +156,12 @@ names(data_set_mean)<-paste(names(data_set_mean),c("_avg"),sep="")
 names(data_set_mean)[1]<-c("volunteer_id");
 names(data_set_mean)[2]<-c("activity");
 
+    #check  the structure from a final data set
 str(data_set_mean)
+
+  #write the output data set in an R working directory 
+  #write.table(file = "final_data_set.txt",data_set_mean,row.names=FALSE )
+  #you can test and see that everything is ok with outup
+  #test<-read.table(file = "final_data_set.txt",header=TRUE)
+
+
